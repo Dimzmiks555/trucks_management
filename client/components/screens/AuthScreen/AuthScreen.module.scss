@@ -1,0 +1,13 @@
+.screen{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.screen form {
+    width: 480px;
+    border-radius: 45px;
+    padding: 80px;
+    background: #fff;
+}

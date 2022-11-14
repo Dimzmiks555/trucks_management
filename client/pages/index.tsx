@@ -1,8 +1,7 @@
+import AuthScreen from "../components/screens/AuthScreen/AuthScreen";
 
-export default function Home() {
+export default function Auth() {
   return (
-    <div>
-    
-    </div>
+    <AuthScreen/>
   )
 }
