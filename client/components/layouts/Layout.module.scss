@@ -1,0 +1,66 @@
+@import '../../styles/colors.scss';
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+.layout aside {
+    min-height: 100vh;
+    padding: 70px 50px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.layout main {
+    width: 100%;
+    padding: 70px 90px;
+}
+.logo {
+    margin-bottom: 40px;
+}
+
+.layout li {
+    font-weight: 500;
+    border-radius: 4px;
+    // border: 1px solid #000;
+    padding: 6px 12px;
+    font-size: 16px;
+    position: relative;
+}
+
+.layout nav > ul > li {
+    margin-bottom: 20px;
+}
+.layout nav > ul > li > ul > li {
+    margin-bottom: 4px;
+}
+.layout li > ul {
+    display: none;
+    padding: 20px;
+    width: 300px;
+    background: #fff;
+    position: absolute;
+    left: 100%;
+    top: -20px;
+}
+.layout nav li:hover {
+    cursor: pointer;
+    background: $primary-light-color;
+}
+.layout .logout {
+    font-weight: 500;
+    margin-top: auto;
+    border-radius: 4px;
+    // border: 1px solid #000;
+    padding: 6px 12px;
+    font-size: 16px;
+    position: relative;
+}
+.layout .logout:hover {
+    cursor: pointer;
+    background: $primary-light-color;
+}
+.layout nav li:hover > ul {
+    display: block !important;
+}
