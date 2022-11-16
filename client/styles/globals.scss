@@ -24,10 +24,17 @@ h1,h2,h3,h4,h5,h6,p {
 }
 h1 {
   font-size: 36px;
-  margin-bottom: 20px;
 }
 ul, li {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+button, input, textarea {
+  font-family: inherit !important;
+}
+
+a:hover {
+  color: $primary-color;
 }

@@ -1,9 +1,21 @@
+import { Button } from '@mui/material'
+import Link from 'next/link'
 import React from 'react'
+import PageHeader from '../../../shared/PageHeader/PageHeader'
+import List from './components/List/List'
 
 const AllScreen = () => {
+
+
+  const data = [1,2,3,4,5,1,2,3,4,5]
+
   return (
     <div>
-        <h1>Транспорт</h1>
+        <PageHeader>
+            <h1>Транспорт</h1>
+            <Link href='/transport/all/create'><Button sx={{color: 'white'}} variant="contained">Добавить</Button></Link>
+        </PageHeader>
+        <List data={data}/>
     </div>
   )
 }

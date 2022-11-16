@@ -36,6 +36,11 @@
     margin-bottom: 4px;
 }
 .layout li > ul {
+    border-radius: 10px;
+    // box-shadow: 20px 0 40px $primary-light-color;
+    border-bottom: 3px solid $primary-light-color;
+    border-right: 4px solid $primary-light-color;
+    z-index: 90;
     display: none;
     padding: 20px;
     width: 300px;
@@ -44,6 +49,7 @@
     left: 100%;
     top: -20px;
 }
+
 .layout nav li:hover {
     cursor: pointer;
     background: $primary-light-color;
